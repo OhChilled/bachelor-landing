@@ -1,31 +1,225 @@
-.skip-link {
-    position: absolute;
-    left: 10px;
-    top: -40px;
-    background: white;
-    color: black;
-    padding: 8px 12px;
-    border-radius: 8px;
+:root {
+    --bg: #081120;
+    --bg-soft: #0f1b31;
+    --card: #132644;
+    --text: #eef4ff;
+    --muted: #b9c8e8;
+    --accent: #56c5ff;
+    --accent-dark: #1b9bd6;
+    --border: rgba(255, 255, 255, 0.12);
+    --shadow: 0 14px 32px rgba(0, 0, 0, 0.28);
+    --radius: 18px;
+    --container: 1120px;
 }
 
-.skip-link:focus {
-    top: 10px;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 16px;
-    padding: 0;
+html {
+    scroll-behavior: smooth;
 }
 
-nav a {
-    color: #56c5ff;
-    text-decoration: none;
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background:
+            radial-gradient(circle at top right, rgba(86, 197, 255, 0.14), transparent 30%),
+            linear-gradient(180deg, #07101d 0%, #0a1730 100%);
 }
 
 img {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+a {
+    color: var(--accent);
+}
+
+a:hover,
+a:focus-visible {
+    color: #9ae5ff;
+}
+
+.container {
+    width: min(100% - 32px, var(--container));
+    margin: 0 auto;
+}
+
+.skip-link {
+    position: absolute;
+    left: 12px;
+    top: -48px;
+    background: #ffffff;
+    color: #000000;
+    padding: 10px 14px;
+    border-radius: 10px;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    top: 12px;
+}
+
+.site-header {
+    padding: 36px 0 24px;
+    background: rgba(15, 27, 49, 0.8);
+    border-bottom: 1px solid var(--border);
+}
+
+.site-header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.site-header img {
+    margin-bottom: 16px;
+}
+
+.site-header h1 {
+    margin: 0 0 12px;
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    line-height: 1.15;
+    max-width: 900px;
+}
+
+.site-header p {
+    margin: 6px 0;
+    color: var(--muted);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+    background: rgba(8, 17, 32, 0.9);
+    border-bottom: 1px solid var(--border);
+}
+
+nav .container {
+    padding: 14px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--text);
+}
+
+nav a:hover,
+nav a:focus-visible {
+    color: var(--accent);
+}
+
+main.container {
+    padding: 36px 0 48px;
+}
+
+section {
+    margin-bottom: 24px;
+    padding: 28px;
+    border-radius: var(--radius);
+    background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.03));
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+}
+
+section img {
+    border-radius: 16px;
+    margin: 18px 0 20px;
+    border: 1px solid var(--border);
+    background: rgba(255,255,255,0.03);
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: clamp(1.5rem, 2.4vw, 2.1rem);
+}
+
+p,
+li {
+    color: var(--muted);
+    font-size: 1.02rem;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+address {
+    font-style: normal;
+    color: var(--muted);
+}
+
+.site-footer {
+    padding: 24px 0 36px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--muted);
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .site-header {
+        padding-top: 28px;
+    }
+
+    nav {
+        position: static;
+    }
+
+    section {
+        padding: 22px;
+    }
+
+    .site-header h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        width: min(100% - 20px, var(--container));
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    section {
+        padding: 18px;
+        margin-bottom: 18px;
+    }
+
+    p,
+    li,
+    address {
+        font-size: 0.98rem;
+    }
 }
