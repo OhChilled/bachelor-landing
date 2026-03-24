@@ -1,33 +1,95 @@
-*,
-*::before,
-*::after {
-box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моделювання процесу зближення та стикування космічних апаратів</title>
 
-body {
-margin: 0;
-font-family: Arial, sans-serif;
-background: #081120;
-color: #eef4ff;
-line-height: 1.6;
-}
+    <meta name="description" content="Лендінг бакалаврської роботи про моделювання процесу зближення та стикування космічних апаратів.">
+    <meta name="keywords" content="бакалаврська робота, космічні апарати, стикування, моделювання, орбітальна механіка, C++">
+    <meta name="author" content="Ткаченко Данііл">
+    <meta name="robots" content="index, follow">
 
-.container {
-width: min(100% - 32px, 1100px);
-margin: 0 auto;
-}
+    <meta property="og:title" content="Моделювання процесу зближення та стикування космічних апаратів">
+    <meta property="og:description" content="Лендінг бакалаврської роботи з описом теми, мети та результатів дослідження.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/illustration.svg">
 
-.site-header,
-.site-footer {
-padding: 24px 0;
-background: #0f1b31;
-}
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="style.css">
 
-section {
-padding: 32px 0;
-}
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Thesis",
+            "name": "Моделювання процесу зближення та стикування космічних апаратів",
+            "alternateName": "Modeling the Process of Spacecraft Rendezvous and Docking",
+            "author": {
+                "@type": "Person",
+                "name": "Ткаченко Данііл"
+            },
+            "inLanguage": "uk",
+            "educationalLevel": "Bachelor",
+            "publisher": {
+                "@type": "CollegeOrUniversity",
+                "name": "Сумський державний університет"
+            }
+        }
+    </script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Перейти до основного вмісту</a>
 
-h1,
-h2 {
-margin-top: 0;
-}
+<header class="site-header" aria-label="Шапка сайту">
+    <div class="container">
+        <img src="images/logo-sumdu.svg" alt="Логотип Сумського державного університету" width="80" height="80">
+        <h1>Моделювання процесу зближення та стикування космічних апаратів</h1>
+        <p>Бакалаврська робота</p>
+    </div>
+</header>
+
+<nav aria-label="Основна навігація">
+    <div class="container">
+        <ul>
+            <li><a href="#about">Про роботу</a></li>
+            <li><a href="#goal">Мета</a></li>
+            <li><a href="#results">Результати</a></li>
+            <li><a href="#contacts">Контакти</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main id="main-content" class="container">
+    <section id="about" aria-labelledby="about-title">
+        <h2 id="about-title">Про роботу</h2>
+        <img src="images/illustration.svg" alt="Ілюстрація процесу зближення та стикування космічних апаратів">
+        <p>Лендінг для представлення бакалаврської роботи, присвяченої моделюванню процесу зближення космічних апаратів.</p>
+    </section>
+
+    <section id="goal" aria-labelledby="goal-title">
+        <h2 id="goal-title">Мета дослідження</h2>
+        <p>Розробити програмний засіб для моделювання процесу стикування космічних апаратів.</p>
+    </section>
+
+    <section id="results" aria-labelledby="results-title">
+        <h2 id="results-title">Очікувані результати</h2>
+        <p>Отримання чисельної моделі, яка дозволяє аналізувати траєкторію руху та перевіряти умови стикування.</p>
+    </section>
+
+    <section id="contacts" aria-labelledby="contacts-title">
+        <h2 id="contacts-title">Контакти</h2>
+        <address>
+            <p>Ткаченко Данііл</p>
+            <p>Сумський державний університет</p>
+        </address>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>© 2026 Ткаченко Данііл</p>
+    </div>
+</footer>
+</body>
+</html>
