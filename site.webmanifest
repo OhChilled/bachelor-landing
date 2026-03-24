@@ -1,0 +1,15 @@
+{
+  "name": "Bachelor Landing Page",
+  "short_name": "Landing",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#081120",
+  "theme_color": "#081120",
+  "icons": [
+    {
+      "src": "images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Ілюстрація стикування космічних апаратів">
+  <rect width="800" height="500" fill="#081120"></rect>
+  <circle cx="120" cy="90" r="3" fill="#fff"></circle>
+  <circle cx="220" cy="60" r="2" fill="#fff"></circle>
+  <circle cx="640" cy="120" r="3" fill="#fff"></circle>
+  <circle cx="730" cy="80" r="2" fill="#fff"></circle>
+  <circle cx="700" cy="420" r="2" fill="#fff"></circle>
+  <circle cx="160" cy="410" r="2" fill="#fff"></circle>
+
+  <ellipse cx="390" cy="250" rx="240" ry="90" fill="none" stroke="#2f5b94" stroke-width="2" stroke-dasharray="10 10"></ellipse>
+
+  <g transform="translate(185 220)">
+    <rect x="0" y="25" width="130" height="36" rx="8" fill="#d8e6ff"></rect>
+    <rect x="120" y="34" width="45" height="18" rx="5" fill="#56c5ff"></rect>
+    <rect x="-42" y="10" width="40" height="66" rx="4" fill="#5374a5"></rect>
+    <rect x="132" y="10" width="40" height="66" rx="4" fill="#5374a5"></rect>
+    <circle cx="64" cy="43" r="14" fill="#1b3157"></circle>
+  </g>
+
+  <g transform="translate(470 200)">
+    <rect x="0" y="35" width="120" height="32" rx="8" fill="#d8e6ff"></rect>
+    <rect x="-30" y="42" width="34" height="18" rx="5" fill="#56c5ff"></rect>
+    <rect x="-56" y="18" width="32" height="66" rx="4" fill="#5374a5"></rect>
+    <rect x="112" y="18" width="32" height="66" rx="4" fill="#5374a5"></rect>
+    <circle cx="58" cy="51" r="12" fill="#1b3157"></circle>
+  </g>
+
+  <path d="M350 250h95" stroke="#56c5ff" stroke-width="4" stroke-linecap="round"></path>
+  <path d="M430 240l18 10-18 10" fill="none" stroke="#56c5ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
